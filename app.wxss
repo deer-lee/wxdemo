@@ -1,4 +1,7 @@
 /**app.wxss**/
+page{
+  height: 100%;
+}
 .container {
   height: 100%;
   display: flex;
@@ -7,4 +10,5 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
+  background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1529498357452&di=5da189bde8abd791b19870c5c61754d4&imgtype=0&src=http%3A%2F%2Fimg4q.duitang.com%2Fuploads%2Fitem%2F201411%2F27%2F20141127144551_CxUr4.jpeg');
 } 
