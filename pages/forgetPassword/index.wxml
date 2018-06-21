@@ -1,0 +1,41 @@
+<!--pages/forgetPassword/index.wxml-->
+<view class="container">
+  <text class='forgetPassword-title'>{{title}}</text>
+  <view wx:if="{{!nextFlag}}">
+    <form class='forgetPassword-form' bindsubmit='submitForgetPassword'>
+      <view class='forgetPassword-input-panel'>
+        <text class='forgetPassword-input-title'>手机</text>
+        <input class='forgetPassword-input' placeholder-class="placeholder-class" type="number" name="phoneNum" value="{{phoneNum}}" placeholder="请输入手机号" maxlength='11' bindinput="bindKeyInput" disabled="{{phoneFlag}}"></input>
+      </view>
+      <view class='forgetPassword-input-panel forgetPassword-input-verification-code-panel'>
+        <view class='forgetPassword-code-input-panel-left'>
+          <text class='forgetPassword-input-title'>手机验证码</text>
+          <input class='forgetPassword-input' placeholder-class="placeholder-class" type="number" name="identifyCode" placeholder="请输入手机验证码"></input>
+        </view>
+        <button class='forgetPassword-code-button' disabled="{{btnDisabled}}" bindtap='identifyCode'>{{time}}</button>
+      </view>
+      <button class='forgetPassword-submit-button' form-type="submit" disabled="{{nextBtnLoading}}" loading="{{nextBtnLoading}}">
+        <text class='forgetPassword-submit-button-text'>下一步</text>
+      </button>
+    </form>
+  </view>
+  <view wx:if="{{nextFlag}}">
+    <form class='forgetPassword-form' bindsubmit='confirmForgetPassword'>
+      <view class='forgetPassword-input-panel'>
+        <!--<view class='forgetPassword-switch-input-panel-left'>-->
+          <text class='forgetPassword-input-title'>新密码</text>
+          <input class='forgetPassword-input' wx:if="{{!isCheck}}" placeholder-class="placeholder-class" type="password" name="password" value="{{password}}" placeholder="请输入新的登录密码" maxlength='20' bindinput="changPassword"></input>
+          <input class='forgetPassword-input' wx:if="{{isCheck}}" placeholder-class="placeholder-class"  name="passwordText" value="{{password}}" placeholder="请输入新的登录密码" maxlength='20' bindinput="changPassword"></input>
+        <!--</view>-->
+        <switch class='forgetPassword-switch' bindchange="switchChange"/>
+      </view>
+      <view class='forgetPassword-input-panel'>
+        <text class='forgetPassword-input-title'>确认密码</text>
+        <input class='forgetPassword-input' placeholder-class="placeholder-class" type="password" name="confirmPassword" value="{{confirmPassword}}" placeholder="请再次输入密码" maxlength='20'></input>
+      </view>
+      <button class='forgetPassword-submit-button' form-type="submit" disabled="{{btnLoading}}" loading="{{btnLoading}}">
+        <text class='forgetPassword-submit-button-text'>确认</text>
+      </button>
+    </form>
+  </view>
+</view>

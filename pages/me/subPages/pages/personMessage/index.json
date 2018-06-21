@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "input-cell": "../../../../../components/inputCell/index"
+  },
+  "backgroundColor": "#6767F3",
+  "navigationBarTitleText": "个人信息"
+}

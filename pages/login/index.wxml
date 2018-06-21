@@ -1,0 +1,27 @@
+<!--pages/login/index.wxml-->
+<view class="container">
+  <view class='logo-panel'>
+    <image class='logo-image' src='../../resources/img/login/logo.png'></image>
+  </view>
+  <form class='login-form' bindsubmit='submitLogin'>
+    <view class='login-input-panel'>
+      <text class='login-input-title' >手机</text>
+      <input class='login-input' placeholder-class="placeholder-class" type="number" placeholder="请输入手机号" maxlength='11' name="phoneNumber"></input>
+    </view>
+    <view class='login-input-panel'>
+      <text class='login-input-title'>用户密码</text>
+      <input class='login-input' placeholder-class="placeholder-class" password="true" placeholder="请输入密码" name="passworld"></input>
+    </view>
+    <button class='login-submit-button' form-type="submit" disabled="{{loginBtnLoading}}" loading="{{loginBtnLoading}}">
+      <text class='login-submit-button-text'>登录</text>
+    </button>
+  </form>
+  <view class='login-link-panel'>
+  <navigator url="../forgetPassword/index?flag=false" hover-class="navigator-hover">
+    <text class='login-link-forgetPassword'>忘记密码</text>
+  </navigator>
+  <navigator url="../createAccountNumber/index" hover-class="navigator-hover">
+    <text class='login-link-create-accountNumber'>创建账号</text>
+  </navigator>
+  </view>
+</view>

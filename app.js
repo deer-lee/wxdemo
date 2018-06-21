@@ -1,6 +1,33 @@
 //app.js
 App({
   onLaunch: function () {
+      wx.ajax = (config) => {
+          let requestConfig = {
+              method: 'POST'
+          }
+          if (this.getInfo()) {
+              requestConfig.header = {
+                  Authorization: 'Bearer ' + this.getInfo().token
+              }
+          }
+          requestConfig = Object.assign(requestConfig, config);
+          requestConfig.url = httpConfig.baseUrl + config.url;
+          let success = requestConfig.success;
+          let fail = requestConfig.fail;
+          requestConfig.success = (res) => {
+              if (res.statusCode === 200) {
+                  if (res.data.code === 200) {
+                      success && success(res.data.result);
+                  } else {
+                      fail && fail(res.data.message);
+                  }
+              } else {
+                  wx.showToast({ title: res.errMsg });
+              }
+          };
+          return wx.request(requestConfig);
+      }
+
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())

@@ -1,0 +1,4 @@
+<!--pages/forgetPassword/index.wxml-->
+<view class="container">
+  <input-cell class="input-cell" title="状态" placeholder="{{status}}" hasArrow="{{false}}"></input-cell>
+</view>

@@ -1,0 +1,79 @@
+/* pages/order/subPages/pages/releaseTrunlLine/index.wxss */
+
+page {
+  background: #f0f2f5;
+}
+
+.container {
+  height: auto;
+}
+
+.trun-line-cell {
+  width: 100%;
+}
+
+.cell-input {
+  font-size: 28rpx;
+  text-align: right;
+}
+
+.cell-input-placeholder-class {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #ccc;
+  letter-spacing: 0;
+  line-height: 28rpx;
+}
+
+.cell-right-view {
+  width: 500rpx;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.trunkLine-done-button {
+  height: 88rpx;
+  width: 690rpx;
+  margin-top: 60rpx;
+  background-image: linear-gradient(-229deg, #4fcbff 16%, #17a9df 100%);
+  box-shadow: 0 25rpx 24rpx 0 rgba(23, 169, 223, 0.20);
+  border-radius: 4rpx;
+  color: #fff;
+}
+
+.trunkLine-user-protocol-panel {
+  margin-top: 50rpx;
+  margin-bottom: 80rpx;
+  width: 690rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trunkLine-user-protocol-checkbox {
+  /* width: 100rpx;
+  height: 100rpx;  *//* margin-bottom: 4rpx; */
+  zoom: 60%;
+}
+
+.trunkLine-user-protocol-text {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #999;
+  letter-spacing: 0;
+  padding-top: 4rpx;
+}
+
+.trunkLine-user-protocol-link {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #17a9df;
+  letter-spacing: 0;
+  margin-bottom: 4rpx;
+}
+
+.IconTrue {
+  position: absolute;
+  left: 20%;
+  top: 34%;
+}

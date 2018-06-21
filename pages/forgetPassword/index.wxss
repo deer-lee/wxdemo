@@ -1,0 +1,114 @@
+/* pages/forgetPassword/index.wxss */
+.container {
+  background-color: #fff;
+  align-items: center;
+}
+
+.forgetPassword-title {
+  width: 690rpx;
+  display: flex;
+  justify-content: flex-start;
+  font-family: PingFangSC-Medium;
+  font-size: 48rpx;
+  color: #333333;
+  margin: 70rpx 0rpx 80rpx 0rpx;
+}
+
+.forgetPassword-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.forgetPassword-input-panel {
+  display: flex;
+  flex-direction: row;
+  width: 690rpx;
+  height: 88rpx;
+  background: #F2F2F2;
+  margin-bottom: 20rpx;
+}
+
+.forgetPassword-input-title {
+  width: 196rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #666666;
+  letter-spacing: 0;
+  padding: 0rpx 0rpx 0rpx 30rpx;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.forgetPassword-input {
+  width: 500rpx;
+  height: 100%;
+  font-size: 28rpx;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.placeholder-class {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #CCCCCC;
+  letter-spacing: 0;
+}
+
+.forgetPassword-submit-button {
+  margin-top: 60rpx;
+  background-image: linear-gradient(229deg, #4FCBFF 16%, #17A9DF 100%);
+  box-shadow: 0 25rpx 24rpx 0 rgba(23,169,223,0.20);
+  border-radius: 4rpx;
+}
+
+.forgetPassword-submit-button-text {
+  /* opacity: 0.4; */
+  font-family: PingFangSC-Medium;
+  font-size: 34rpx;
+  color: #FFFFFF;
+  letter-spacing: 20rpx;
+}
+
+.forgetPassword-input-verification-code-panel {
+  background-color: #fff;
+}
+
+.forgetPassword-code-input-panel-left {
+  width: 490rpx;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  background-color: #F2F2F2;
+  align-items: center;
+}
+
+.forgetPassword-code-button {
+  width: 190rpx;
+  height: 88rpx; 
+  background-color: #17A9DF;
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx; 
+  color: #FFFFFF;
+  letter-spacing: 0; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rpx;
+}
+.forgetPassword-switch {
+  width: 130rpx;
+  height: 112rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rpx;
+  zoom: 80%;
+}

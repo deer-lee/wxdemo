@@ -1,0 +1,21 @@
+<!--pages/forgetPassword/index.wxml-->
+<view class="container">
+  <Text class="titleCon">{{title}}</Text>
+  <form class='formCon' bindsubmit='confirmEditPassword'>
+    <view class="itemCon">
+      <text class="topTitle">原始密码</text>
+      <input class='inputCon' placeholder-class="placeholder-class" password="true" placeholder="请输入原始密码" name="oldPassword"></input>
+    </view>
+    <view class="itemCon">
+      <text class="topTitle">新登录密码</text>
+      <input class='inputCon' placeholder-class="placeholder-class" password="true" placeholder="请输入新的登录密码" name="newPassword"></input>
+    </view>
+    <view class="itemCon">
+      <text class="topTitle">确认密码</text>
+      <input class='inputCon' placeholder-class="placeholder-class" password="true" placeholder="两次输入确认密码" name="confirmPassword"></input>
+    </view>
+    <button class='submitBtn' form-type="submit" disabled="{{btnLoading}}" loading="{{btnLoading}}">
+      <text class='submitBtnText'>确认</text>
+    </button>
+  </form>
+</view>
