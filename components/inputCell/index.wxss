@@ -1,0 +1,81 @@
+/* components/selectTabelCell/index.wxss */
+
+.select-tabel-cell {
+  width: 100%;
+  height: 88rpx;
+  background-color: #fff; 
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconLeft {
+  width: 45rpx;
+  height: 45rpx;
+  /*margin-right: 15rpx;*/
+}
+.cell-border{
+  flex-grow: 1;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #F0F2F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 87rpx;
+  padding-left: 30rpx;
+}
+.cell-link {
+  flex-grow: 1;
+  max-width: 570rpx;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+}
+
+.cell-title {
+  width: 150rpx;
+  font-size: 28rpx;
+  color: #666666;
+  letter-spacing: 0;
+  line-height: 87rpx;
+}
+.cell-placeholder {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #CCCCCC;
+  letter-spacing: 0;
+  line-height: 87rpx;
+  flex-grow: 1;
+  text-align: right;
+  padding-right: 34rpx;
+  box-sizing: border-box;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.cell-show-data {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  letter-spacing: 0;
+  line-height: 88rpx; 
+  flex-grow: 1;
+  text-align: right;
+  padding-right: 34rpx;
+  box-sizing: border-box;
+}
+
+.cell-arrow {
+  width: 16rpx;
+  height: 28rpx;
+}
+
+.cell-company {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: 88rpx;
+}

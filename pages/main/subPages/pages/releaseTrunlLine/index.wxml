@@ -1,0 +1,51 @@
+<!--pages/order/subPages/pages/dispatch/index.wxml-->
+<wxs src="../../../../../filter/index.wxs" module="filter" />
+<view class='container'>
+   <select-tabel-cell class="trun-line-cell" title="发货地" url="../startAddres/index" cellData="{{filter.joinAddress(startAddres)}}" navOptions="{{startAddres}}" placeholder="请选择始发地"></select-tabel-cell>
+   <select-tabel-cell class="trun-line-cell" title="收货地" url="../endAddres/index" cellData="{{filter.joinAddress(endAddres)}}" navOptions="{{endAddres}}" placeholder="请选择收货地"></select-tabel-cell>
+   <select-tabel-cell class="trun-line-cell" cellData="{{loadCarTime}}" title="装货时间" bind:selectCallback="selectLoadCarTime" placeholder="请选择装货时间"></select-tabel-cell>
+   <date-time-picker show="{{showLoadTimePicker}}" bind:doneCallback="loadCarTimeDataDoneCallback" bind:cancelCallback="loadCarTimeDataCancelCallback"></date-time-picker>
+   <select-tabel-cell class="trun-line-cell" title="温度带" cellData="{{temperatureZone.name}}" bind:selectCallback="selectTemperatureZonet" placeholder="请选择温度类型"></select-tabel-cell>
+   <temperature-zone-picker show="{{showTemperatureZonePicker}}" bind:doneCallback="temperatureZoneDoneCallback" bind:cancelCallback="temperatureZoneCancelCallback"></temperature-zone-picker>
+   <select-tabel-cell class="trun-line-cell" title="货物类别" cellData="{{filter.joinGoodCategory(goodsCategory)}}" bind:selectCallback="selectGoodsCategory" placeholder="请选择货物类别"></select-tabel-cell>
+   <goods-category-picker show="{{showGoodsCategoryPicker}}" bind:doneCallback="goodsCategoryDoneCallback" bind:cancelCallback="goodsCategoryCancelCallback"></goods-category-picker>
+   <form-tabel-cell class="trun-line-cell" title="货物总计" company="吨">
+    <input class='cell-input' type="digit" placeholder-class="cell-input-placeholder-class" bindblur="weightDone" placeholder="请输入货物吨数" value='{{goodsWeight}}'></input>
+   </form-tabel-cell>
+   <form-tabel-cell class="trun-line-cell" company="方">
+    <input class='cell-input' type="digit"  bindblur="volumeDone" placeholder-class="cell-input-placeholder-class" placeholder="请输入货物方数" value='{{goodsVolume}}'></input>
+   </form-tabel-cell>
+   <form-tabel-cell class="trun-line-cell" title="期望运费" company="元">
+     <icon type="warn" size='14' color="#18A9DF" bindtap='IconFn' class='IconTrue'></icon>
+    <input class='cell-input' type="number" maxlength="5" bindblur='freightDone' placeholder-class="cell-input-placeholder-class" placeholder="请输入期望运费" value='{{freight}}'></input>
+   </form-tabel-cell>
+   <select-tabel-cell class="trun-line-cell" cellData="{{payMode.label}}" bind:selectCallback="selectPayMode" title="结算方式" placeholder="请选择结算方式"></select-tabel-cell>
+   <pay-mode-picker show="{{showPayModePicker}}" bind:doneCallback="payModeDoneCallback" bind:cancelCallback="payModeCancelCallback"> </pay-mode-picker>
+   <select-tabel-cell class="trun-line-cell" title="装货清单(非必填)"  bind:selectCallback="uploadGoodsList"  cellData="{{detailedListNumber}}" placeholder="请选择装货清单"></select-tabel-cell>
+   <form-tabel-cell class="trun-line-cell" title="发货联系人">
+    <input class='cell-input' bindblur='shipperDone' placeholder-class="cell-input-placeholder-class" placeholder="请输入发货联系人" value='{{shipper}}' maxlength='6'></input>
+   </form-tabel-cell>
+   <button class='trunkLine-done-button' bindtap='sbumitBtnClick'>
+    委托提交
+   </button>
+   <view class='trunkLine-user-protocol-panel'>
+      <checkbox-group class='trunkLine-user-protocol-checkbox' bindchange="protocolChange">
+        <checkbox value="selectProtocol"  checked="true"/>
+      </checkbox-group> 
+      <text class='trunkLine-user-protocol-text'>同意签订协议</text>
+      <navigator url="../trunkLinkProtocol/index" hover-class="navigator-hover">
+        <text class='trunkLine-user-protocol-link'>《委托协议》</text>
+      </navigator>
+       <navigator url="../trunkContract/index" hover-class="navigator-hover">
+           <text class='trunkLine-user-protocol-link'>《委托运输合同》</text>
+       </navigator>
+    </view>
+</view>
+<!-- 请选择始发地
+请选择始发地
+请选择最早装车时间
+请选择货物类型
+请选择货物类别
+请输入货物吨数
+请输入货物方数
+请输入期望运费 -->

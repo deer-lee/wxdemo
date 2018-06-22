@@ -1,0 +1,9 @@
+<!--pages/forgetPassword/index.wxml-->
+<view class="container">
+  <input-cell class="input-cell" title="状态" placeholder="{{status}}" hasArrow="false"></input-cell>
+  <input-cell class="input-cell" title="登录名" placeholder="{{loginName}}" hasArrow="false"></input-cell>
+  <input-cell class="input-cell" title="姓名" placeholder="{{userName}}" hasArrow="false"></input-cell>
+  <input-cell class="input-cell" title="角色名称" placeholder="{{roleName}}" hasArrow="false"></input-cell>
+  <input-cell class="input-cell" title="所属组织" placeholder="{{belongOrganize}}" hasArrow="false"></input-cell>
+  <input-cell class="input-cell" title="电话号码" placeholder="{{phoneNumber}}" hasArrow="false"></input-cell>
+</view>

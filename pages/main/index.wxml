@@ -1,0 +1,30 @@
+<!--pages/main/index.wxml-->
+<view class="container">
+  <!-- <scroll-view>  -->
+  <swiper class='swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="manageCon">
+    <view class="leftCon">
+      <image src="../../resources/img/main/dispatch.png"></image>
+    </view>
+    <view class="rightCon">
+      <label class="rightTitle">调度管理</label>
+      <text class="rightDesc">车辆调度、运力招标申请、更换运力、添加运输单、添加调度单、确认调度、调度结果查询</text>
+    </view>
+  </view>
+  <view class="manageCon">
+    <view class="leftCon">
+      <image src="../../resources/img/main/dispatch.png" alt=""/>
+    </view>
+    <view class="rightCon">
+      <label class="rightTitle">交易管理</label>
+      <text class="rightDesc">分派承运商、发布到市场、确认报价、选择承运商、转派线下、我的交易查询</text>
+    </view>
+  </view>
+  <!-- </scroll-view>  -->
+</view>

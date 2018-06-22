@@ -1,0 +1,23 @@
+<!--pages/main/index.wxml-->
+<view class="container">
+  <!-- <scroll-view>  -->
+  <navigator class="manageCon" url="/pages/message/subPages/pages/dispatch/index" hover-class="navigator-hover">
+    <view class="leftCon">
+      <image src="../../resources/img/main/dispatch.png"></image>
+    </view>
+    <view class="rightCon">
+      <label class="rightTitle">调度中心消息</label>
+      <text class="rightDesc">点击链接即可前往处理</text>
+    </view>
+  </navigator>
+  <navigator class="manageCon" url="/pages/message/subPages/pages/business/index" hover-class="navigator-hover">
+    <view class="leftCon">
+      <image src="../../resources/img/main/dispatch.png" alt=""/>
+    </view>
+    <view class="rightCon">
+      <label class="rightTitle">交易中心消息</label>
+      <text class="rightDesc">点击链接即可前往处理活查看处理结果</text>
+    </view>
+  </navigator>
+  <!-- </scroll-view>  -->
+</view>

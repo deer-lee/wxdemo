@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "select-tabel-cell": "../../../../../components/selectTabelCell/index",
+    "form-tabel-cell": "../../../../../components/formTabelCell/index",
+    "date-time-picker": "../../../../../components/dateTimePicker/index",
+    "temperature-zone-picker": "../../../../../components/temperatureZonePicker/index",
+    "goods-category-picker": "../../../../../components/goodsCategoryPicker/index",
+    "pay-mode-picker": "../../../../../components/payModePicker/index"
+  },
+  "navigationBarTitleText": "委托干线"
+}
