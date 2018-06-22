@@ -9,6 +9,6 @@
   <input-cell class="input-cell" title="个人信息" iconSrc="{{iconSrc}}" bind:selectCallback="toPersonMessage" placeholder=''></input-cell>
   <input-cell class="input-cell" title="修改密码" iconSrc="{{iconSrc}}" bind:selectCallback="toEditPassword"></input-cell>
   <input-cell class="input-cell" title="当前版本" iconSrc="{{iconSrc}}" placeholder='{{versionNum}}'></input-cell>
-  <input-cell class="input-cell" title="扫码下载" iconSrc="{{iconSrc}}" bind:selectCallback="toPersonMessage" placeholder=''></input-cell>
+  <input-cell class="input-cell" title="扫码下载" iconSrc="{{iconSrc}}" bind:selectCallback="toDownload" placeholder=''></input-cell>
   <!-- </scroll-view>  -->
 </view>

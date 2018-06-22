@@ -1,0 +1,11 @@
+<view class='select-tabel-cell'>
+  <image wx:if="{{haveIcon}}" src="{{iconSrc}}" class="iconLeft"></image>
+    <view class="cell-border">
+        <text class='cell-title'>{{title}}</text>
+        <view class='cell-link' bindtap="linkTo">
+            <text wx:if="{{!haveData}}" class='cell-placeholder'>{{placeholder}}</text>
+            <text wx:if="{{haveData}}" class='cell-show-data'>{{cellData}}</text>
+            <image wx:if="{{!haveArrow}}" class='cell-arrow' src='../../resources/img/public/arrow.png'></image>
+        </view>
+    </view>
+</view>

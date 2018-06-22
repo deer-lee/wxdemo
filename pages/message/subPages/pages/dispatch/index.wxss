@@ -1,0 +1,9 @@
+/* pages/order/subPages/pages/releaseTrunlLine/index.wxss */
+
+page {
+  background: #f0f2f5;
+}
+
+.container {
+  height: auto;
+}

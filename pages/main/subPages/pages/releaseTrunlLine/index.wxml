@@ -1,4 +1,4 @@
-<!--pages/order/subPages/pages/releaseTrunlLine/index.wxml-->
+<!--pages/order/subPages/pages/dispatch/index.wxml-->
 <wxs src="../../../../../filter/index.wxs" module="filter" />
 <view class='container'>
    <select-tabel-cell class="trun-line-cell" title="发货地" url="../startAddres/index" cellData="{{filter.joinAddress(startAddres)}}" navOptions="{{startAddres}}" placeholder="请选择始发地"></select-tabel-cell>

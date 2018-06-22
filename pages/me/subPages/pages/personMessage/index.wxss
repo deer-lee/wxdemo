@@ -1,7 +1,6 @@
 /* pages/forgetPassword/index.wxss */
 .container {
   background-color: #fff;
-  padding: 0 26rpx;
 }
 .input-cell{
   width: 100%;

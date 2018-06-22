@@ -1,8 +1,9 @@
 {
   "pages": [
-    "pages/me/index",
     "pages/main/index",
+    "pages/me/index",
     "pages/message/index",
+    "pages/login/index",
     "pages/forgetPassword/index"
   ],
   "subPackages": [
@@ -15,7 +16,8 @@
     {
       "root": "pages/message/subPages/",
       "pages": [
-        "pages/releaseTrunlLine/index"
+        "pages/dispatch/index",
+        "pages/business/index"
       ]
     },
     {

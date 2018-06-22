@@ -1,5 +1,10 @@
 //app.js
+let httpConfig = require('./httpConfig.js');
 App({
+    info: undefined,
+    getInfo: function () {
+        return this.info ? this.info : wx.getStorageSync('info');
+    },
   onLaunch: function () {
       wx.ajax = (config) => {
           let requestConfig = {

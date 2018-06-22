@@ -9,7 +9,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    secToken: '',
+    secToken: '*9aAjS3evbQlEnhz',
     encrypt: new XeEncrypt(),
     loginBtnLoading: false,
     logoutFlag: false
@@ -19,12 +19,13 @@ Page({
     let checkPassword = validateForm.checkPassword(e.detail.value.passworld, '请输入密码');
     let checkPhone = validateForm.checkPhone(e.detail.value.phoneNumber);
     if (checkPhone && checkPassword) {
-      wx.ajax({
-        url: '/api/app/owner/uam/login/getSecToken',
-        success(res) {
-          _this.setData({
-            secToken: res
-          });
+      console.log(111);
+      // wx.ajax({
+      //   url: '/api/app/owner/uam/login/getSecToken',
+      //   success(res) {
+      //     _this.setData({
+      //       secToken: res
+      //     });
           let phoneNumber = e.detail.value.phoneNumber;
           let passworld = new XeEncrypt().aesEncrypt(e.detail.value.passworld, _this.data.secToken, _this.data.secToken);
           _this.setData({
@@ -76,14 +77,14 @@ Page({
               });
             }
           });
-        },
-        fail() {
-          wx.showToast({
-            title: '服务异常请稍后再试！',
-            icon: 'none'
-          })
-        }
-      });
+      //   },
+      //   fail() {
+      //     wx.showToast({
+      //       title: '服务异常请稍后再试！',
+      //       icon: 'none'
+      //     })
+      //   }
+      // });
     }
 
   },

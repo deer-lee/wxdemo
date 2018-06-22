@@ -1,9 +1,12 @@
+// pages/order/subPages/pages/releaseTrunlLine/index.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+
   },
   /**
    * 生命周期函数--监听页面加载
@@ -23,7 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    console.log(this.data);
   },
 
   /**
@@ -58,10 +61,9 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage() {
-
     return {
       title: '一键发布 急速响应 全程冷链 安全可控',
-      path: '/pages/main/index'
+      path: 'pages/main/index'
     }
   }
 })

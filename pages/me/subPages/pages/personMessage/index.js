@@ -9,7 +9,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-      status: 'Through'
+      status: 'Through',
+      loginName: 'admin',
+      userName: '超级管理员',
+      roleName: '运营测试运',
+      belongOrganize: '华北大区',
+      phoneNumber: '13211111111'
   },
   confirmEditPassword(e) {
       console.log('确认');
